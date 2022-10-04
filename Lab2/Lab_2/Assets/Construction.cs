@@ -34,12 +34,12 @@ public class Construction : MonoBehaviour
            Vector3 pos = transform.position + new Vector3(x, 0, z);
            float angleDegrees = -angle*Mathf.Rad2Deg;
            Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
-           Instantiate(cubepref, pos, rot);
+           Instantiate(cubepref, pos, transform.rotation);
         }
     }
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }

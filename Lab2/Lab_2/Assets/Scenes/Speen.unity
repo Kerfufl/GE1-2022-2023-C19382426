@@ -171,7 +171,8 @@ MonoBehaviour:
   cubepref: {fileID: 1756099083385005095, guid: bc575356e8a6d37469e9e05b8a1b056a, type: 3}
   no_obj: 6
   rings: 4
-  rad: 1.5
+  b_rad: 1.4
+  rad: 1.4
 --- !u!1 &915908875
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915908875}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 15.36, z: -5.11}
+  m_LocalPosition: {x: 0, y: 14.1, z: -5.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

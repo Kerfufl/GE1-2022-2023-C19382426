@@ -10,8 +10,8 @@ public class RotateMe : MonoBehaviour
     public float yrot;
     void Start()
     {
-        yrot = -.5f;
-        zrot = -.2f;
+        yrot = .2f;
+        zrot = 0f;
     }
 
     // Update is called once per frame
