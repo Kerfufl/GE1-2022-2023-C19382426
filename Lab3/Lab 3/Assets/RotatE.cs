@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RotatE : MonoBehaviour
 {
-
+    public float ang = .5f;
+    public float theta = 0f;
     public GameObject piv;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,18 @@ public class RotatE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(piv.transform.position, Vector3.left,.5f);
+        // if(Input.GetKey(KeyCode.LeftArrow))
+        // {
+        //     transform.RotateAround(piv.transform.position, Vector3.left,ang);
+        // } else if(Input.GetKey(KeyCode.RightArrow))
+        // {
+        //     transform.RotateAround(piv.transform.position, Vector3.left,-ang);
+        // }
+        
+        transform.RotateAround(piv.transform.position, Vector3.left,Mathf.Sin(theta));
+        theta+=Time.deltaTime;
+        float an = Mathf.Sin(theta);
+        Debug.Log(an.ToString() + "\r");
+        
     }
 }
