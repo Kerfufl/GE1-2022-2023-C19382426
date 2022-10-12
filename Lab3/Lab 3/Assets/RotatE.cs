@@ -26,7 +26,8 @@ public class RotatE : MonoBehaviour
         
         transform.RotateAround(piv.transform.position, Vector3.left,Mathf.Sin(theta));
         theta+=Time.deltaTime;
-        float an = Mathf.Sin(theta);
+        //Struggling with getting the sine wave working
+        float an = Mathf.Sin(theta)*(.5f);
         Debug.Log(an.ToString() + "\r");
         
     }
